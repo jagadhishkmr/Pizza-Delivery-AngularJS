@@ -1,0 +1,167 @@
+.img1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.bot {
+    position: absolute;
+    top:0px;
+    right: 312px;
+    z-index: 1;
+   
+   
+}
+.box {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+
+@keyframes fadenUp {
+    from {
+        transform: translate3d(0,60px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+        
+    }
+}
+
+
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadenUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    
+}
+@keyframes mymove {
+    from {
+        bottom :1000px
+    }
+
+    to {
+        bottom : 0px;
+        opacity: 0.5;
+    }
+}
+
+
+/* 
+.animate {
+    animation-duration: 3s;
+    
+    
+} */
+
+/* .animatedFadeIn {
+    opacity: o
+} */
+
+.to {
+    /* opacity: o; */
+    animation: mymove 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    
+}
+/* .animatedFadeIn {
+    opacity: 0
+} */
+.top {
+    position: absolute;
+    
+    right: 0px ;
+    top: 0px;
+    width: 350px ;
+    height:755px;
+    z-index: 2;
+
+}
+.upper {
+    position: absolute;
+    top:50px ;
+    right: 0px ;
+    width: 300px ;
+    height: 300px;
+    
+}
+.upper-content {
+    position: absolute;
+    
+ 
+    width: 300px ;
+    height: 50px;
+    
+
+}
+.bookme{
+   
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3px;
+}
+.line{
+    position: absolute;
+    right: 40px ;
+    top: 20px;   
+    width: 35px;
+   
+}
+.hr{
+   
+   margin: 3px;
+   border: 1px solid;
+   border-style:inset; 
+   
+}
+.hs{
+   
+  
+    transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: height 2s;
+ }
+.hs:hover{
+    height: 10px;
+
+    
+    
+    
+}
+.tk{
+    color: darkgreen;
+    margin: 40px;
+    font-size:  12px;
+    text-align: justify;
+
+}
+.case{
+    position: absolute;
+    right: 30px ;
+    top: 40%; 
+    z-index: 2;
+
+}
+.wide{
+    position: absolute;
+    top:754px;
+    left: 0px;
+    height:50%;
+    width: 100%;
+    background-color: azure;
+    z-index: 2;
+}

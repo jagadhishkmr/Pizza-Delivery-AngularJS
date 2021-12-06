@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="app/Register/reg.css" />
+
+  <img class="bvb1" src="/assets/images/t3.jpg" alt="bg-pic" />
+  <div class="by1">
+  <div class="container y2">
+      <h3 class="sg1"><strong>Sign up</strong></h3>
+      <form name="registerFrom" novalidate>
+        <div
+          class="input-group"
+          style="
+            box-shadow: 0 4px 8px 0 rgba(161, 113, 223, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 50px;
+          "
+        >
+          <span class="input-group-addon"
+            ><i class="fas fa-user" aria-hidden="true"></i>
+          </span>
+          <input
+            id="Name"
+            type="text"
+            name="username"
+            class="form-control"
+            ng-model="user.username"
+            ng-pattern="/^[a-z]{4,16}$/"
+            placeholder="Name"
+            required
+          /></div>
+         
+         <span
+        style="color: rgba(0, 0, 0, 0.432)"
+        ng-show="registerFrom.username.$dirty && registerFrom.username.$invalid"
+      >
+        <span ng-show="registerFrom.username.$error.required"
+          ><p>Username is required.<a style="color: rgb(252, 2, 2);">*</a></p></span
+        >
+        <span ng-show="registerFrom.username.$error.pattern"
+          ><p>Username is invalid.<a style="color: rgb(252, 2, 2);">*</a></p></span
+        >
+      </span>
+        <br />
+
+        <div
+          class="input-group"
+          style=" box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;">
+          <div class="input-group-addon"><i class="fas fa-envelope"></i></div>
+          <input
+            id="Email"
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Email"
+            ng-model="user.email"
+            ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"
+            required
+          /></div>
+         
+         <span  style="color: rgba(2, 2, 2, 0.432)"ng-show="registerFrom.email.$dirty && registerFrom.email.$invalid">
+          <span ng-show="registerFrom.email.$error.pattern"><p>&nbsp;&nbsp;Invalid email<a style="color: rgb(252, 2, 2);">*</a></p></span></span>
+
+          
+        
+        <br />
+        <div
+          class="input-group"
+          style="box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;">
+          <div class="input-group-addon"><i class="fas fa-lock"></i></div>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            ng-maxlength="8"
+            ng-model="user.password"
+            ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/"
+            required/>
+            </div><span style="color: rgba(2, 2, 2, 0.432)"ng-show="registerFrom.password.$dirty && registerFrom.password.$invalid"ng-class="hide">
+              <span ng-show="registerFrom.password.$error.required"><p>password required<a style="color: rgb(252, 2, 2);">*</a></p></span>
+              <span ng-show="registerFrom.password.$error.pattern"><p>password should be spcl character<a style="color: rgb(252, 2, 2);">*</a></p></span>
+              <span ng-show="registerFrom.password.$error.maxlength"><p>max 8 character<a style="color: rgb(252, 2, 2);">*</a></p></span>
+          </span>
+            
+        
+
+        <br />
+        <div style="text-align: center">
+          <input
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+            value="1"
+            ng-model="checkbox "
+            
+            required
+          />&nbsp;<label for="agree"
+            >I agree all statements in<a>Terms and conditions</a></label
+          ><span ng-show="registerFrom.checkbox.$error.required"></span>
+        </div>
+        <br />
+        <div>
+          <button
+            type="submit"
+            name="submit"
+            ng-click="submit()"
+            class="btn btn-success btn-block"
+          >
+            <strong>Create account</strong>
+          </button>
+        </div>
+        <br />
+      </form>
+    </div>
+  </div>
+

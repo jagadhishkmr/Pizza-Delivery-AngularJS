@@ -1,0 +1,567 @@
+<link rel="stylesheet" href="app/Dashboard/dash.css">
+<style>
+  .l1{
+    top :20px;
+    right: 10px;
+    position: absolute;
+}
+</style>
+
+<div>
+  <div>
+    <img src="assets/images/dash/pizza.jpg" alt="pizza" width="auto"height="900px" >
+    <img  class="img1"src="assets/images/A.png" alt="a" width="575px"height="600px">
+    
+    <div class="l1 "><img src="assets/images/dash/toppers-logo.svg" width="auto"height="100px"><br><br><br>
+      <div class="c1 "><h5  class="text-left"style="font: small-caps bold 24px/1 sans-serif;color: rgb(53, 23, 53);">Really good! Here's something else you could say instead of delicious....</h5><br> <div class ="text-right"><a  style="font: italic small-caps bold 16px/2 cursive;color: slategray;cursor: pointer;font-size: 2.5rem;" >Menu &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   .</a><br>
+        <a  style="font: italic small-caps bold 16px/2 cursive;color: slategray;cursor: pointer;font-size: 2.5rem;" >Deals &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   .</a><br>
+        <a  style="font: italic small-caps bold 16px/2 cursive;color: slategray;cursor: pointer;font-size: 2.5rem;" >Orders &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   .</a><br>
+        
+        <a  style="font: italic small-caps bold 16px/2 cursive;color: slategray;cursor: pointer;font-size: 2.5rem;" >About us &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   .</a>
+      </div>
+    </div>
+     
+     
+             
+    </div>  
+    
+    <div class="bt">
+      <div class="jumbotron text-center"><h3 style="font: small-caps bold 24px/1 sans-serif;">Grab it</h3></div>  
+      <div class="container">
+        <div class="row justify-content-around">
+     
+            <div class="col-md-6 text-center thumbnail">
+              <img src="assets/images/PIZZA/CHICKEN PIZZA.jpg" alt="chicken-pizza"  >
+            <div class=" " ><h3 class="font1">Chicken pizza</h3>
+              <p>Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.</p>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown" >size
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a >small</a></li>
+                  <li><a>medium</a></li>
+                  <li><a>large</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>      
+          <div class="col-md-4 text-center">
+            <img src="assets/images/PIZZA/pizza-3840x2160-broccoli-parsley-basil-saffron-tomatoes-sausage-689.jpg" alt="chicken-pizza" width="300px"height="200px" ></div>
+           <div class=""></div>
+           </div>
+        <div>
+         <!-- <div class="container" name="menuList" ng-controller="dashcontroller" ng-repeat>
+            <div class="row justify-content-around">
+                <div class="col-sm-6 col-md-4" name="margarita" id="1" ng-model="dish1">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/margarita-bacon.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">{{n.name}}</h3>
+                            <h5>
+                                4.0&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="chicken" id="2" ng-model="dish2">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="assets/images/PIZZA/CHICKEN PIZZA.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Chicken pizza</h3>
+                            <h5>
+                                4.0&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="salami" id="3" ng-model="dish3">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="assets/images/PIZZA/pizza-7680x4320-salami-corn-olives-5972.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Salami-cornolives pizza</h3>
+                            <h5>
+                                &nbsp;3.9&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="tomato" id="4" ng-model="dish4">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/pizza-tomato-pepper-4k-16605.jpg" alt="tomato pepper" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Tomato pepper pizza</h3>
+                            <h5>
+                                &nbsp;3.&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="broccoli" id="5" ng-model="dish5">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/pizza-3840x2160-broccoli-parsley-basil-saffron-tomatoes-sausage-689.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Broccoli pizza</h3>
+                            <h5>
+                                3.7&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Broccoli, onions, parsley, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="pepperoni" id="6" ng-model="dish6">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/pepperoni-pizza-4.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Pepperoni pizza</h3>
+                            <h5>
+                                4.2&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="italian" id="7" ng-model="dish7">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/italian pizza.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Italian pizza</h3>
+                            <h5>
+                                3.4&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="cheese" id="8" ng-model="dish8">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/cheese pizza.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Cheese pizza</h3>
+                            <h5>
+                                3.5&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-warning">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" name="shrimps" id="9" ng-model="Addcart.dish8">
+                    <div class="thumbnail" style="
+              box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              border-radius: 5px;
+            ">
+                        <img src="/assets/images/PIZZA/shrimps-pizza.jpg" alt="margarita" style="width: 320px; height: 180px" />
+                        <div class="caption">
+                            <h3 class="font1">Shrimps pizza</h3>
+                            <h5>
+                                4.3&nbsp;
+                                <span color="white" class="fa fa-star checked"></span>
+                            </h5>
+                            <p class="font2">
+                                &nbsp;&nbsp; &nbsp; &nbsp;Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.
+                            </p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">
+                  size
+                  <span class="caret"></span>
+                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>small</a>
+                                    </li>
+                                    <li>
+                                        <a>medium</a>
+                                    </li>
+                                    <li>
+                                        <a>large</a>
+                                    </li>
+                                </ul>
+                                <label>Quantity :</label>
+                                <select name="quantity" id="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                                <br />
+                                <br />
+                                <button class="btn btn-warning" ng-click="cart1()">
+                  Add to cart
+                </button> &nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+  
+        </div>
+      </div> 
+    </div>
+
+    </div>
+
+  </div>
+</div>

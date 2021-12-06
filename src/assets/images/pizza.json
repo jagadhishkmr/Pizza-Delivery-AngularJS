@@ -1,0 +1,71 @@
+{
+    
+    "results": [
+   
+    {
+    "id": "1",
+    "name": "Margarita pizza",
+    "price": "450",   
+    "images":"/assets/images/PIZZA/margarita-bacon.jpg"
+    },
+    {
+        "id": "2",
+    "name": "Chicken Pizza",    
+    "price": "550"
+    
+    },
+    {
+        "id": "3",
+    "name": "Salami-cornolives pizza",  
+    "price": "400",
+    "description": "A thick base pizza with fresh tomato sauce"
+    
+    },
+    {
+        "id": "4",
+        "name": "Tomato pepper pizza",      
+        "price": "350",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    },
+    {
+        "id": "5",
+        "name": "Broccoli pizza",      
+        "price": "300",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    },
+    {
+        "id":"6",
+        "name": "Pepperoni pizza",      
+        "price": "420",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    },
+    {
+        "id":"7",
+        "name": "Italian pizza", 
+        "price": "358",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    },
+    {
+        "id":"8",
+        "name": "Cheese pizza",     
+        "price": "290",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    },
+    {
+        "id":"9",
+        "name": "Shrimps pizza",      
+        "price": "375",
+        "description": "A thick base pizza with fresh tomato sauce"
+        
+    }  
+
+
+    ]
+    
+   
+}

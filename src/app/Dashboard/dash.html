@@ -1,0 +1,228 @@
+<style>
+    .l1 {
+        top: 20px;
+        right: 10px;
+        position: absolute;
+    }
+   
+</style>
+
+<div>
+    <div>
+        <img src="assets/images/dash/pizza.jpg" alt="pizza" width="auto" height="900px" loading="lazy" />
+        <img class="img1" src="assets/images/A.png" alt="a" width="575px" height="600px" />
+
+        <div class="l1">
+            <img src="assets/images/dash/toppers-logo.svg" width="auto" height="100px" /> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a style="cursor: pointer" ng-click="nav('cart')"><img  src="/assets/images/cart.png" width="50px" height="auto">{{myCart.length}}</a>
+            <br />
+            <br />
+            <br />
+            <div class="c1">
+                <h5 class="text-left" style="
+            font: small-caps bold 24px/1 sans-serif;
+            color: rgb(53, 23, 53);
+          ">
+                    Really good! Here's something else you could say instead of delicious....
+                </h5>
+                <br />
+                <div class="text-right">
+                    <a style="
+              font: italic small-caps bold 16px/2 cursive;
+              color: slategray;
+              cursor: pointer;
+              font-size: 2.5rem;
+            ">
+            Menu &emsp; &nbsp; .
+          </a>
+                    <br />
+                    <a style="
+              font: italic small-caps bold 16px/2 cursive;
+              color: slategray;
+              cursor: pointer;
+              font-size: 2.5rem;
+            ">
+            Deals &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; .
+          </a>
+                    <br />
+                    <a style="
+              font: italic small-caps bold 16px/2 cursive;
+              color: slategray;
+              cursor: pointer;
+              font-size: 2.5rem;
+            ">
+            Orders &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; .
+          </a>
+                    <br />
+
+                    <a style="
+              font: italic small-caps bold 16px/2 cursive;
+              color: slategray;
+              cursor: pointer;
+              font-size: 2.5rem;
+            ">
+            About us &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; .
+          </a>
+                    <br />
+                    <a href="#">logout</a>
+                </div>
+            </div>
+        </div>
+        <div width="100%" height="100px"></div>
+
+        <div class="bt">
+            <div class="jumbotron text-center">
+                <h3 style="font: small-caps bold 24px/1 sans-serif">Grab it</h3>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-around">
+                <div class="col-sm-6 col-md-4" name="margarita" ng-repeat="item in menu">
+                    <div class="thumbnail" style="box-shadow: 0 4px 8px 0 rgba(158, 94, 231, 0.2),0 6px 20px 0      rgba(0, 0, 0, 0.19);border-radius: 5px;">
+                        <img src={{item.image}} alt="margarita" style=" width:320px ;
+                             height:180px;" loading="lazy">
+                        <div class="caption">
+                            <h3 class="font1">{{item.name}}</h3>
+                            <h5>4.0&nbsp;<span color="white" class="fa fa-star checked"></span></h5>
+                            <p class="font2">Chicken, onions, applewood smoked bacon, smoky BBQ sauce topped with pepper jack, mozzarella, and drizzled with more BBQ sauce.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="dropdown" data-toggle="dropdown">size
+                      <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a>small</a></li>
+                                    <li><a>medium</a></li>
+                                    <li><a>large</a></li>
+                                </ul><br><br>
+                                <label>Quantity :</label>
+                                <select class="form-control" name="quantity" id="quantity">
+
+                     <option value="1">1</option>
+                      <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>                    
+                     <option value="6">6</option>
+                     <option value="7">7</option>
+                     <option value="8">8</option>           
+                   </select>
+                                <br><br>
+                                <button type="submit" class="btn btn-warning" ng-click="pushToCart(item)">Add to cart</button>&nbsp;&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Buy now</button>
+                                <br>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg"></div>
+        <div>
+            <div id="contact" class="container">
+                <h3 class="text-center">Contact</h3>
+                <p class="text-center">
+                    <em>We love our Guest!</em>
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Drop a note.</p>
+                        <p>
+                            <span class="glyphicon glyphicon-map-marker"></span> Chennai, India
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-phone"></span> Phone: +91 1515151515
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span> Email: jk@mail.com
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <h3 class="text-center">From The shop</h3>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href> jk </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href> JD </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href> Pete </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h2>jk , Shop owner</h2>
+                        <p>Man, we've been on the road for some time now.</p>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h2>JD, manager</h2>
+                        <p>
+                            Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?
+                        </p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h2>Pete, cheif</h2>
+                        <p>
+                            I mean, sometimes I enjoy the show, but other times I enjoy other things.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="jumbotron-fluid text-center tag" style="background-color: rgb(54, 59, 80); color: white">
+                <p style="font-weight: 800">Follow us on</p>
+                <p>
+                    <a href="#">
+                        <i class="fab fa-instagram" style="font-size: 30px; color: rgba(255, 255, 255, 0.973)"></i>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">
+                        <i class="fab fa-twitter" href="#" style="font-size: 30px"></i>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">
+                        <i class="fab fa-youtube" style="font-size: 30px; color: red"></i>
+                    </a>
+                </p>
+
+                <div class="jumbotron-fluid text-center tag" style="background-color: rgb(0, 0, 0)">
+                    <span style="color: white">
+            <p>© Your Website 2021. All Rights Reserved.</p>
+            <p>
+              <a href="#">Privacy</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">Terms</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">FAQ</a>
+            </p>
+          </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
